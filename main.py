@@ -28,20 +28,20 @@ def operation(op):
     final_operation = op
     print(op)
     if var_first:
-        num_total = int(result.get())
+        num_total = float(result.get())
         var_first = False
     else:
         if op == '+':
-            num_total += int(result.get())
+            num_total += float(result.get())
             print('nt {}'.format(num_total))
         if op == '-':
-            num_total -= int(result.get())
+            num_total -= float(result.get())
             print('nt {}'.format(num_total))
         if op == '*':
-            num_total = num_total * int(result.get())
+            num_total = float(num_total) * float(result.get())
             print('nt {}'.format(num_total))
         if op == '/':
-            num_total = int( num_total / int(result.get()) ) 
+            num_total = float( float(num_total) / float(result.get()) ) 
             print('nt {}'.format(num_total))
     result.set("")  
         
@@ -96,9 +96,5 @@ Button(root, text='/' , command=lambda:operation("/")).place(x=330,y=100,width=T
 Button(root, text='Cls' , command=cls_method).place(x=330,y=160,width=TAM_BOTON , height=TAM_BOTON + 60)
 Button(root, text='=' , command=igual).place(x=260,y=280,width=190 , height=TAM_BOTON)
 
-
-#Button(root, text='sumar' , command=sumar).grid(row=4,column=0 , pady=5)
-#Button(root, text='restar' , command=restar).grid(row=4,column=1 ,pady=5)
-#Button(root, text='multiplicar' , command=multiplicar).grid(row=4,column=2, pady=5)
 
 root.mainloop()
