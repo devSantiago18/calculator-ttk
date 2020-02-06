@@ -6,7 +6,7 @@ from cal_values import *
 # Var Globales
 num_total = 0
 var_first = True # variable que indica si es la primera operacion en realizarse
-TAM_BOTON_NUMERO = 50
+TAM_BOTON = 50
 final_operation = ''
 
 
@@ -164,29 +164,29 @@ Entry(frame , state=DISABLED, textvariable=result).place(x=15, y=10, width=400 ,
 
 
 
-Button(root, text='1' , command=uno).place(x=40, y=100,width=TAM_BOTON_NUMERO , height=TAM_BOTON_NUMERO)
-Button(root, text='2' , command=dos).place(x=40, y=160,width=TAM_BOTON_NUMERO , height=TAM_BOTON_NUMERO)
-Button(root, text='3' , command=tres).place(x=40,y=220,width=TAM_BOTON_NUMERO , height=TAM_BOTON_NUMERO)
+Button(root, text='1' , command=uno).place(x=40, y=100,width=TAM_BOTON , height=TAM_BOTON)
+Button(root, text='2' , command=dos).place(x=40, y=160,width=TAM_BOTON , height=TAM_BOTON)
+Button(root, text='3' , command=tres).place(x=40,y=220,width=TAM_BOTON , height=TAM_BOTON)
 
-Button(root, text='4' , command=cuatro).place(x=110,y=100,width=TAM_BOTON_NUMERO , height=TAM_BOTON_NUMERO)
-Button(root, text='5' , command=cinco).place(x=110,y=160,width=TAM_BOTON_NUMERO , height=TAM_BOTON_NUMERO)
-Button(root, text='6' , command=seis).place(x=110,y=220,width=TAM_BOTON_NUMERO , height=TAM_BOTON_NUMERO)
+Button(root, text='4' , command=cuatro).place(x=110,y=100,width=TAM_BOTON , height=TAM_BOTON)
+Button(root, text='5' , command=cinco).place(x=110,y=160,width=TAM_BOTON , height=TAM_BOTON)
+Button(root, text='6' , command=seis).place(x=110,y=220,width=TAM_BOTON , height=TAM_BOTON)
 
-Button(root, text='7' , command=siete).place(x=180,y=100,width=TAM_BOTON_NUMERO , height=TAM_BOTON_NUMERO)
-Button(root, text='8' , command=ocho).place(x=180,y=160,width=TAM_BOTON_NUMERO , height=TAM_BOTON_NUMERO)
-Button(root, text='9' , command=nueve).place(x=180,y=220,width=TAM_BOTON_NUMERO , height=TAM_BOTON_NUMERO)
+Button(root, text='7' , command=siete).place(x=180,y=100,width=TAM_BOTON , height=TAM_BOTON)
+Button(root, text='8' , command=ocho).place(x=180,y=160,width=TAM_BOTON , height=TAM_BOTON)
+Button(root, text='9' , command=nueve).place(x=180,y=220,width=TAM_BOTON , height=TAM_BOTON)
 
-Button(root, text='0' , command=cero).place(x=40,y=280,width=190 , height=TAM_BOTON_NUMERO)
+Button(root, text='0' , command=cero).place(x=40,y=280,width=190 , height=TAM_BOTON)
 
 
-Button(root, text='+' , command=sumar).place(x=260,y=100,width=TAM_BOTON_NUMERO , height=TAM_BOTON_NUMERO)
-Button(root, text='-' , command=restar).place(x=260,y=160,width=TAM_BOTON_NUMERO , height=TAM_BOTON_NUMERO)
-Button(root, text='*' , command=multiplicar).place(x=260,y=220,width=TAM_BOTON_NUMERO , height=TAM_BOTON_NUMERO)
+Button(root, text='+' , command=sumar).place(x=260,y=100,width=TAM_BOTON , height=TAM_BOTON)
+Button(root, text='-' , command=restar).place(x=260,y=160,width=TAM_BOTON , height=TAM_BOTON)
+Button(root, text='*' , command=multiplicar).place(x=260,y=220,width=TAM_BOTON , height=TAM_BOTON)
 
-Button(root, text='/' , command=dividir).place(x=330,y=100,width=TAM_BOTON_NUMERO , height=TAM_BOTON_NUMERO)
+Button(root, text='/' , command=dividir).place(x=330,y=100,width=TAM_BOTON , height=TAM_BOTON)
 
-Button(root, text='Cls' , command=cls_method).place(x=330,y=160,width=TAM_BOTON_NUMERO , height=TAM_BOTON_NUMERO + 60)
-Button(root, text='=' , command=igual).place(x=260,y=280,width=190 , height=TAM_BOTON_NUMERO)
+Button(root, text='Cls' , command=cls_method).place(x=330,y=160,width=TAM_BOTON , height=TAM_BOTON + 60)
+Button(root, text='=' , command=igual).place(x=260,y=280,width=190 , height=TAM_BOTON)
 
 
 #Button(root, text='sumar' , command=sumar).grid(row=4,column=0 , pady=5)
