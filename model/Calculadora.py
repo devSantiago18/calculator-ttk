@@ -7,3 +7,6 @@ def resta(num1,num2):
 
 def mutiplicacion(num1,num2):
     return num1 * num2
+
+def divicion(num1,num2):
+    return num1/num2
