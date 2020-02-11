@@ -1,10 +1,13 @@
-from tkinter import * 
-
+from tkinter import Tk , Frame , Label , Button , Entry 
+from tkinter import DISABLED , StringVar
 #  Globals var
 num_total = 0
 var_first = True # var to detected the first operation
 TAM_BOTON = 50
 final_operation = '' # last operation
+
+
+
 
 root = Tk()
 root.config(bd=15)
@@ -67,8 +70,6 @@ def igual():
     num_total = 0
 
 
-
-
 #Elements
 Entry(frame , state=DISABLED, textvariable=result).place(x=15, y=10, width=400 , height=30)
 
@@ -95,6 +96,5 @@ Button(root, text='/' , command=lambda:operation("/")).place(x=330,y=100,width=T
 
 Button(root, text='Cls' , command=cls_method).place(x=330,y=160,width=TAM_BOTON , height=TAM_BOTON + 60)
 Button(root, text='=' , command=igual).place(x=260,y=280,width=190 , height=TAM_BOTON)
-
 
 root.mainloop()
