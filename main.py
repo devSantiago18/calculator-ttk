@@ -1,10 +1,10 @@
 from tkinter import * 
 
-# Var Globales
+#  Globals var
 num_total = 0
-var_first = True # variable que indica si es la primera operacion en realizarse
+var_first = True # var to detected the first operation
 TAM_BOTON = 50
-final_operation = ''
+final_operation = '' # last operation
 
 root = Tk()
 root.config(bd=15)
